@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="myprogram"/>
+        <attribute name="authors" value="reff"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-03 10:20:26 PM"/>
+        <attribute name="created" value="cmVmZjtSRUZGOzIwMjQtMDktMDI7MDk6NTQ6MzkgUE07MjAwMw=="/>
+        <attribute name="edited" value="cmVmZjtSRUZGOzIwMjQtMDktMDM7MTA6MjA6MjYgUE07MjsyMDk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilanganB1, bilanganB2" type="Integer" array="False" size=""/>
+            <declare name="hasilPenjumlahan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Bilangan B1 : &quot;" newline="True"/>
+            <input variable="bilanganB1"/>
+            <output expression="&quot;Masukkan Bilangan B2 : &quot;" newline="True"/>
+            <input variable="bilanganB2"/>
+            <assign variable="hasilPenjumlahan" expression="bilanganB1 + bilanganB2"/>
+            <if expression="hasilPenjumlahan &gt; 0">
+                <then>
+                    <output expression="&quot;Hasilnya adalah &quot; &amp; hasilPenjumlahan &amp; &quot;, merupakan bilangan bulat positif&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="hasilPenjumlahan &lt; 0">
+                        <then>
+                            <output expression="&quot;Hasilnya adalah &quot; &amp; hasilPenjumlahan &amp; &quot;, merupakan bilangan bulat negatif&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Hasilnya adalah &quot; &amp; hasilPenjumlahan &amp; &quot;, merupakan bilangan nol&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
