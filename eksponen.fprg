@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="eksponen"/>
+        <attribute name="authors" value="reff"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-06 09:59:54 PM"/>
+        <attribute name="created" value="cmVmZjtSRUZGOzIwMjQtMDktMDY7MDk6NDk6MjYgUE07MjAwNw=="/>
+        <attribute name="edited" value="cmVmZjtSRUZGOzIwMjQtMDktMDY7MDk6NTk6NTQgUE07MTsyMTE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilBasis, bilEksponen, hasilPangkat" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Bilangan Basis : &quot;" newline="True"/>
+            <input variable="bilBasis"/>
+            <output expression="&quot;Masukkan Bilangan Eksponen : &quot;" newline="True"/>
+            <input variable="bilEksponen"/>
+            <assign variable="hasilPangkat" expression="1"/>
+            <for variable="n" start="1" end="bilEksponen" direction="inc" step="1">
+                <assign variable="hasilPangkat" expression="hasilPangkat * bilBasis"/>
+            </for>
+            <output expression="&quot;Hasil Pangkat = &quot; &amp; hasilPangkat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
